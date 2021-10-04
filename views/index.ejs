@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>youtube radio thing</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+input {
+	width: 80%;
+	padding: 20px;
+	font-size: 2em;
+	margin: 20px;
+}
+</style>
+  </head>
+  <body>
+	  <form action="/load" method="post">
+		  <label for="ytlink">Enter youtube link: </label>
+		  <br>
+		  <input id="ytlink" type="text" name="ytlink" value="<%= current_ytlink %>">
+		  <br>
+		  <label for="seek_minutes">Minute to start at: </label>
+		  <br>
+		  <input type="text" name="seek_minutes">
+		  <input type="submit" value="OK">
+	  </form>
+  </body>
+</html>
